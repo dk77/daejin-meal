@@ -13,7 +13,7 @@ body {
   gap: 10px;
 }
 
-/* 날짜 박스 */
+/* 날짜 요일 박스 */
 .date-box {
   background-color: #039af1;
   border-radius: 15px 15px 0px 0px;
@@ -25,7 +25,7 @@ body {
 }
 
 
-/* 급식 박스&버튼*/
+/* 급식 박스&날짜이동버튼*/
 .meal-container {
   display: flex;
   align-items: center;
@@ -40,12 +40,12 @@ body {
   border-radius:0px 0px 15px 15px;
   padding: 15px;
   min-width: 190px;
-  min-height: 210px;
+  min-height: 230px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   font-size: 1em;
 }
 
-/*초록 버튼*/
+/*날짜 이동 버튼*/
 .meal-container button {
   font-size: 1em;
   padding: 10px 15px;
