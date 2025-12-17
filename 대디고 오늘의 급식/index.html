@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>대디고 오늘의 급식</title>
+
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#039af1" />
+
+    <!--iOS아이콘설정-->
+    <link rel="apple-touch-icon" sizes="1024x1024" href="icon-1024.png">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!--폰 화면 고정-->
+    <meta name="viewport" 
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="header">
+    <h1>대디고 오늘의 급식</h1>
+    <button id="calendar-btn" title="캘린더"><img src="img.png" alt="캘린더" width="40px"></button>
+  </div>
+  <br>
+
+  <div class="date-box" id="date">불러오는 중...</div>
+
+  <div class="meal-container">        <!-- # 은 클래스, . 은 id-->
+      <button id="prev">◀</button>
+
+      <div id="meal-box">
+      <p id="meal">불러오는 중...</p>
+      </div>
+
+      <button id="next">▶</button>
+  </div>
+
+  <div id="calendar-box" style="display:none;"></div>
+
+  <script src="script.js"></script>
+
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+    .then(() => console.log("✅ Service Worker registered"))
+    .catch(err => console.error("❌ SW registration failed:", err));
+  }
+  </script>
+
+</body>
+</html>

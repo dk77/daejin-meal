@@ -1,0 +1,140 @@
+body {
+  font-family: 'Pretendard', sans-serif;
+  background-color: #f7f9fd;
+  color: #333;
+  text-align: center;
+  padding: 30px;
+
+  /*폰 화면 고정*/
+  body {
+  touch-action: manipulation; 
+  overscroll-behavior: none;  
+}
+
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* 날짜 요일 박스 */
+.date-box {
+  background-color: #039af1;
+  border-radius: 15px 15px 0px 0px;
+  padding: 10px 20px;
+  display: inline-block;
+  width: 180px;
+  height: 25px;
+  color: #ffffff;
+}
+
+
+/* 급식 박스&날짜이동버튼*/
+.meal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom:20px;
+}
+
+/*급식박스*/
+#meal-box {
+  background-color: #ffffff;
+  border-radius:0px 0px 15px 15px;
+  padding: 15px;
+  min-width: 190px;
+  min-height: 230px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-size: 1em;
+
+}
+
+/*날짜 이동 버튼*/
+.meal-container button {
+  font-size: 1em;
+  padding: 10px 15px;
+  border-radius: 12px;
+  border: none;
+  background-color: #039af1;
+  color: white;
+  cursor: pointer;
+}
+
+.meal-container button:hover {
+  background-color: #0172b4;
+}
+/*달력보기*/
+#calendar-btn {
+  border: none;
+  background-color: #f7fdf8;
+  width: 50px;
+  height:35px;
+  cursor: pointer;   /*마우스 모양 변화*/
+}
+
+/* 달력보기 , 눌렀을때 색 변화*/
+#calendar-btn:hover {
+  background-color: #f7fdf8;
+}
+
+h1 {
+  color: #039af1;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+/*날짜,요일*/
+#date {
+  font-size: 1.2em;
+  margin-bottom: 0px;
+}
+
+/* 캘린더: 흰 바탕 밑 기본 설정 */
+#calendar-box {
+  margin: 20px auto;
+  width: 250px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  font-family: 'Pretendard', sans-serif;
+}
+
+#calendar-box table {
+  width: 250px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+/* 캘린더: 날짜 부분 text*/
+#calendar-box th, #calendar-box td {
+  padding: 8px;
+  border: 1px solid #ddd; /* 캘린더: 나눔칸*/
+}
+
+/* 캘린더: 요일 text*/
+#calendar-box th {
+  background-color: #039af1;
+  color: white;
+}
+
+#calendar-box td {
+  cursor: pointer;
+}
+
+/* 캘린더 위 버튼 올렸을때 색 변화*/
+#calendar-box td:hover {
+  background-color: #F3EFF9;  
+}
+
+/* 오늘 날짜 강조 */
+.today {
+  background-color: #039af1; 
+  color: white;
+  font-weight: bold;
+}
